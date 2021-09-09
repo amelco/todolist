@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>To do List</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <div class="w3-container w3-teal">
+        <h1>To do List</h1>
+    </div>
+    
+    <div class="w3-panel w3-margin">
+        <label for="tarefa">Tarefa:</label>
+        <input class="w3-input w3-border w3-round" type="text" id="tarefa" name="tarefa"><br />
+        <label for="nome">Responsável:</label>
+        <input class="w3-input w3-border w3-round" type="text" id="nome" name="nome"><br />
+        <label for="prazo">Prazo:</label>
+        <input class="w3-input w3-border w3-round" type="text" id="prazo" name="prazo">
+        <br />
+        <button class="w3-button w3-green" id="btnAddTarefa">Adicionar tarefa</button>
+    </div>
+
+    <br />
+    <div class="w3-cell-row w3-margin">
+    <div class="w3-container w3-border w3-cell w3-mobile">
+    <h2>Tarefas a fazer</h2>
+    <table class="w3-table w3-striped" id="tblToDo">
+        <tr>
+            <th>Tarefa</th>
+            <th>Responsável</th>
+            <th>Prazo</th>
+            <th>Ação</th>
+        </tr>
+    </table>
+    </div>
+    
+    <div class="w3-container w3-border w3-cell w3-mobile">
+    <h2>Tarefas feitas</h2>
+    <table class="w3-table w3-striped" id="tblDone">
+        <tr>
+            <th>Tarefa</th>
+            <th>Responsável</th>
+            <th>Prazo</th>
+            <th>Ação</th>
+        </tr>
+    </table>
+    </div>
+    </div>
+
+   <script src="todo.js"></script> 
+</body>
+</html>
